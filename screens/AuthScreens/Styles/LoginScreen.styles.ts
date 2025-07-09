@@ -28,7 +28,7 @@ export const Login_Styles = StyleSheet.create({
     marginTop: height * 0.02,
   },
   logo: {
-    backgroundColor: GlobalColors.background,
+    backgroundColor: GlobalColors.primaryDark,
     width: 70,
     height: 70,
     borderRadius: 16,
@@ -57,7 +57,7 @@ export const Login_Styles = StyleSheet.create({
     marginTop: -5,
   },
   accentText: {
-    color: GlobalColors.textPrimary,
+    color: GlobalColors.primaryLight,
   },
   subtitleText: {
     color: "#757575",
@@ -88,7 +88,7 @@ export const Login_Styles = StyleSheet.create({
     width: "100%",
     height: 56,
     borderRadius: 12,
-    backgroundColor: GlobalColors.background,
+    backgroundColor: GlobalColors.primaryDark,
     justifyContent: "center",
     alignItems: "center",
     marginTop: height * 0.01,
@@ -109,7 +109,7 @@ export const Login_Styles = StyleSheet.create({
     fontSize: 16,
   },
   signupLink: {
-    color: GlobalColors.textSecondary,
+    color: GlobalColors.textPrimary,
     fontWeight: "bold",
     fontSize: 16,
   },

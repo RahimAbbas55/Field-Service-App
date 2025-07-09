@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
-import { IconType , NavCardProps } from '../../Types/UIPropsTypes';
+import { IconType , NavCardProps } from '../../types/UIPropsTypes';
 
 const getIconName = (iconType: IconType): string => {
   switch (iconType) {

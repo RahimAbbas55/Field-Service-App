@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { View, Animated, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons"; // or 'react-native-vector-icons/Ionicons'
-import { LoaderProps } from "../../Types/UIPropsTypes";
+import { LoaderProps } from "../../types/UIPropsTypes";
 
 const Loader: React.FC<LoaderProps> = ({
   size = 40,

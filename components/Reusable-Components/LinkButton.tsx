@@ -2,7 +2,7 @@ import React from 'react';
 import { Text, TouchableOpacity, StyleSheet } from 'react-native';
 import { View } from 'react-native';
 import { GlobalColors } from '../../constants/GlobalColors';
-import { LinkButtonProps } from '../../Types/UIPropsTypes';
+import { LinkButtonProps } from '../../types/UIPropsTypes';
 
 const LinkButton: React.FC<LinkButtonProps> = ({ 
   preText, 
@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
   },
   linkText: {
-    color: GlobalColors.softGreen,
+    color: GlobalColors.primaryLight,
     fontWeight: 'bold',
     fontSize: 16,
   },

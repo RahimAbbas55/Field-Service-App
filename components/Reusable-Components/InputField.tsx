@@ -6,7 +6,8 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import { Ionicons } from '@expo/vector-icons'; // Assuming you're using Expo
-import { InputFieldProps } from '../../Types/UIPropsTypes';
+import { InputFieldProps } from '../../types/UIPropsTypes';
+import { GlobalColors } from '../../constants/GlobalColors';
 
 const InputField: React.FC<InputFieldProps> = ({
   placeholder,
@@ -72,8 +73,8 @@ const styles = StyleSheet.create({
     borderRadius: 25,
     paddingHorizontal: 16,
     height: 56,
-    borderWidth: 1,
-    borderColor: '#E0E0E0',
+    borderWidth: 2,
+    borderColor: GlobalColors.primaryDark,
   },
   errorContainer: {
     borderColor: '#D32F2F',
