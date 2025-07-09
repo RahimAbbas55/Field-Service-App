@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import { AuthStackParamList } from '../types/NavigationType';
 import LoginScreen from '../screens/AuthScreens/Screens/LoginScreen';
-import SignUpScreen from '../screens/AuthScreens/Screens/LoginScreen';
-import ForgotPassword from '../screens/AuthScreens/Screens/LoginScreen';
-import SplashScreen from '../screens/AuthScreens/Screens/LoginScreen';
+import SignUpScreen from '../screens/AuthScreens/Screens/SignUpScreen';
+import ForgotPassword from '../screens/AuthScreens/Screens/ForgetPassword';
+import SplashScreen from '../screens/AuthScreens/Screens/SpashScreen';
 
 const Stack = createStackNavigator<AuthStackParamList>();
 
