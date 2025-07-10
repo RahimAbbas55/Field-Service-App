@@ -1,28 +1,32 @@
-import { NavigationContainer } from '@react-navigation/native';
-import AuthNavigator from './navigators/AuthNavigator';
+// Other Essential Imports
+import * as React from "react";
+import { NavigationContainer } from "@react-navigation/native";
+import { SafeAreaProvider } from "react-native-safe-area-context";
 
-// Toasts Imports
-import Toast from 'react-native-toast-message';
-import toastConfig from './components/Config/toastConfig';
-import LoginScreen from './screens/AuthScreens/Screens/LoginScreen';
-import { SafeAreaProvider } from 'react-native-safe-area-context';
-import SignUpScreen from './screens/AuthScreens/Screens/SignUpScreen';
-import ForgotPassword from './screens/AuthScreens/Screens/ForgetPassword';
+// Context Imports
+import { AuthProvider } from "./context/AuthContext";
+
+// Navigater Import
+import RootNavigator from "./navigators/RootNavigator";
+
+// Import of toasts
+import Toast from "react-native-toast-message";
+import toastConfig from "./components/Config/toastConfig";
 
 export default function App() {
   return (
-    
-     <>
-      <NavigationContainer>
-      <AuthNavigator/>
-    </NavigationContainer>
-    <Toast
+    <SafeAreaProvider>
+      <AuthProvider>
+        <NavigationContainer>
+          <RootNavigator />
+        </NavigationContainer>
+      </AuthProvider>
+      <Toast
         config={toastConfig}
         position="top"
         visibilityTime={3000}
         autoHide
       />
-     </>
-    
+    </SafeAreaProvider>
   );
 }
