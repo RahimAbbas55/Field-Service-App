@@ -2,7 +2,9 @@ import React from 'react';
 import { useAuth } from '../context/AuthContext';
 import { ActivityIndicator, Text, View } from 'react-native';
 import AuthNavigator from './AuthNavigator';
+import MainNavigator from './MainNavigator'
 import Loader from '../components/Reusable-Components/Loader';
+
 
 export default function RootNavigator() {
   const { user, loading , logout} = useAuth();
@@ -18,7 +20,7 @@ export default function RootNavigator() {
 //     logout()
 //   }
   return user ?  (
-  <Text>Helloe</Text>
+    <MainNavigator/>
 ) : (
   <AuthNavigator />
 );
